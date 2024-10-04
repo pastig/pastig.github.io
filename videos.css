@@ -1,0 +1,12 @@
+:root {
+    --file-width: 500px;
+    --file-height: 500px;
+
+}
+
+
+.video {
+    width: var(--file-width);
+    height: var(--file-height);
+}
+

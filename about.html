@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="containers.css">
 </head>
 <body>
 
@@ -20,39 +22,108 @@
         </ul>
     </nav>
 
-        <!-- Top container for title -->
-    <!-- <div class="big-title-container">
-        <h1>More about me</h1>
-    </div> -->
-    <div class="container-spacer"></div>
+
     <div class="container-spacer"></div>
 
-    <!-- Reusable container start -->
-    <div class="centered-container">
-        <h2 class="container-header">Contact information</h2>
-        <div class="image-text-container">
-            <div class="image-container">
-                <img src="images/linkedin.jpeg" alt="About Me Image" class="about-me-image">
+
+    <!-- CONTACT INFORMATION -->
+    <div class="main-container-wrapper" style="--main-container-width: 500px; --file-width: 200px; --file-height: 300px; --text-width: 300px;">
+        <h2 class="container-heading">Contact information</h2>
+        <div class="main-container">
+            <!-- First container, can be text or media -->
+            <div class="file-container">
+                <img class="my-file" src="images/linkedin.jpeg" alt="About Me Image">
             </div>
-
+            <!-- Second container, can be text or media -->
             <div class="text-container">
                 <p>🤖 Anders Stig Pedersen</p>
+                <br>
                 <p>☎️ +45 31541037</p>
+                <br>
                 <p>
                     <a class="link" href="https://www.linkedin.com/in/anders-pedersen-a3b7396b/" target="_blank" rel="noopener noreferrer">
                         <img src="images/linkedinLogo.png" alt="LinkedIn Logo" class="linkedin-logo">
                         Anders Stig Pedersen
                     </a>
                 </p>
+                <br>
                 <p class="link">✉️<a class="link" href="mailto:andersstigp@gmail.com"> andersstigp@gmail.com</a></p>
             </div>
         </div>
-        <div class="container-spacer"></div>
     </div>
-    <!-- Reusable container stop -->
+    <div class="container-spacer"></div>
+    <!-- Generic container end -->
+
+
+    <!-- Background -->
+    <div class="main-container-wrapper" style="--main-container-width: 500px; --file-width: 200px; --file-height: 300px; --text-width: 500px;">
+        <h2 class="container-heading">Background</h2>
+        <div class="main-container">
+            <!-- First container, can be text or media -->
+
+            <!-- Second container, can be text or media -->
+            <div class="text-container">
+                <p>
+                    I’m 33 years old and live in CPH V.
+                    Driven by honesty and empathy, I
+                    thrive in agile, collaborative
+                    environments that encourage
+                    innovation. My strengths in teamwork,
+                    creativity, and initiative have earned
+                    me recognition for improving
+                    workflows and automating processes.
+                    I’m adaptable and eager to learn - if
+                    there’s something I don’t know, I’ll do
+                    my best to learn it quickly. Whether
+                    working independently or with a
+                    team, I value open communication
+                    and support to refine ideas. A good
+                    work-life balance helps me stay
+                    focused and productive. I seek a
+                    team that values integrity, openness,
+                    and continuous growth. I aim to align
+                    with the company’s goals.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-spacer"></div>
+    <!-- Background container end -->
+
+
+    <!-- HOBBIES -->
+    <div class="main-container-wrapper" style="--main-container-width: 500px; --file-width: 200px; --file-height: 300px; --text-width: 300px;">
+        <h2 class="container-heading">Hobbies</h2>
+        <div class="main-container">
+            <!-- First container, can be text or media -->
+
+            <!-- Second container, can be text or media -->
+            <div class="text-container">
+                <p>🎶 Producing music </p>
+                <br>
+                <p>🍻 Beer Brewing </p>
+                <br>
+                <p>🎾 Padel Tennis </p>
+                <br>
+                <p>💻 Computer Science </p>
+                <br>
+                <p>📲 SwiftUI iOS development </p>
+                <br>
+                <p>📚 Taking courses in interesting topics</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-spacer"></div>
+    <!-- HOBBIES container end -->
+    
+
+
+
+
+
 
     <!-- Reusable container start -->
-    <div class="centered-container">
+    <!-- <div class="centered-container">
         <h2 class="container-header">Background</h2>
         <div class="image-text-container">
            
@@ -80,26 +151,8 @@
         </div>
         <div class="container-spacer"></div>
     </div>
-    <!-- Reusable container stop -->
+  Reusable container stop -->
 
-    <!-- Reusable container start -->
-    <div class="centered-container">
-        <h2 class="container-header">Hobbies</h2>
-        <div class="image-text-container">
-            
-            <div class="text-container">
-                <p>🎶 Producing music </p>
-                <p>🍻 Beer Brewing </p>
-                <p>🎾 Padel Tennis </p>
-                <p>💻 Computer Science </p>
-                <p>📲 SwiftUI iOS development </p>
-                <p>📚 Taking courses in interesting topics</p>
-            </div>
-        </div>
-        <div class="container-spacer"></div>
-    </div>
-    <!-- Reusable container stop -->
-    
 
     <script src="script.js"></script>
 

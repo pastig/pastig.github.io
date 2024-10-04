@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="containers.css">
 </head>
 <body>
 
@@ -20,44 +22,29 @@
         </ul>
     </nav>
 
-
-
-       
         <div class="container-spacer"></div>
-        <div class="container-spacer"></div>
-        <div class="centered-container">
-            <!-- <h2 class="container-header">Contact information</h2> -->
-            <div class="image-text-container">
-                <div class="image-container">
-                    <img src="images/linkedin.jpeg" alt="About Me Image" class="about-me-image">
+
+        <!-- Generic container start -->
+        <div class="main-container-wrapper" style="--main-container-width: 500px; --file-width: 200px; --file-height: 300px; --text-width: 300px;">
+            <h2 class="container-heading">Welcome to my site!</h2>
+            <div class="main-container">
+                <!-- First container, can be text or media -->
+                <div class="file-container">
+                    <img class="my-file" src="images/linkedin.jpeg" alt="About Me Image">
                 </div>
-    
+        
+                <!-- Second container, can be text or media -->
                 <div class="text-container">
-                    <h3>Welcome to my site!</h3>
-                    <p>Please have a look around, checking out more about me, my work experience, and my project portfolio.</p>
+                    <p>Check out more about me, my work experience, and my project portfolio.</p>
+                    <br>
                     <p>You can <a href="assets/Anders_Stig_Pedersen_CV.pdf" download="Anders_Stig_Pedersen_CV.pdf" class="link">
-                        download my CV</a> as a single PDF file using the link here or by clicking the navbar link above.
+                        download my CV</a> as a single PDF file using the link here or by clicking "📄 Download CV" above.
                     </p>
                 </div>
             </div>
         </div>
-
-
-
-    <!-- Container for the image and subtext
-    <div class="image-text-container">
-        <div class="image-container">
-            <img src="images/linkedin.jpeg" alt="About Me Image" class="about-me-image">
-        </div>
-
-        <div class="text-container">
-            <h3>Welcome to my site!</h3>
-            <p>Please have a look around, checking out more about me, my work experience, and my project portfolio.</p>
-            <p>You can <a href="assets/Anders_Stig_Pedersen_CV.pdf" download="Anders_Stig_Pedersen_CV.pdf" class="download-cv-link">
-                download my CV</a> as a single PDF file using the link here or by clicking the navbar link above.
-            </p>
-        </div>
-    </div> -->
+        <div class="container-spacer"></div>
+        <!-- Generic container end -->
 
     <script src="script.js"></script>
 

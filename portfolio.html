@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="containers.css">
 </head>
 <body>
 
@@ -20,8 +22,37 @@
 
 
     <div class="container-spacer"></div>
-    <div class="container-spacer"></div>
     
+
+    <!-- Rocket Booster container start -->
+    <div class="main-container-wrapper" style="--main-container-width: 700px; --file-width: 400px; --file-height: 300px; --text-width: 300px;">
+        <h2 class="container-heading">Rocket Booster</h2>
+        <div class="main-container">
+            <!-- First container, can be text or media -->
+            <div class="file-container">
+                <video class="video" autoplay loop muted>
+                    <source src="assets/rocketvideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Second container, can be text or media -->
+            <div class="text-container">
+                <p>I made this little "helicopter game" called Rocket Booster in Unity, using the Unity Game Engine with C# scripting. </p>
+                <p>The player can steer the rocket using keyboard inputs.</p>
+                <p>Finally, I used to level manager so the player could progress to other levels.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-spacer"></div>
+    <!-- Rocket Booster container end -->
+
+
+
+
+
+
+
     <div class="centered-container-video-text">
         <h2 class="container-header">Rocket Booster</h2>
         <div class="video-text-container">

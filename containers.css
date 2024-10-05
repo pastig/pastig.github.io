@@ -90,3 +90,9 @@
     max-height: 200px;
     border-radius: 10%; /* Optional for circular images */
 }
+
+.video {
+    max-width: var(--file-width);
+    max-height: var(--file-height);
+
+}

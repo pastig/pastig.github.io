@@ -6,7 +6,14 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navigation.css">
-    <link rel="stylesheet" href="containers.css">
+    <link rel="stylesheet" href="cards.css">
+    <style>
+        :root {
+            --card-width: 800px;
+            --image-width: 200px;
+            --text-width: 500px;
+        }
+    </style>
 </head>
 <body>
 
@@ -20,63 +27,29 @@
         </ul>
     </nav>
 
-
     <div class="large-container-spacer"></div>
-    
-    <div class="main-container" style="--container-width: 1000px">
-        <h2 class="container-title">Rocket Booster Project</h2>
-        <div class="left-subcontainer">
-            <!-- You can insert an image, video, or text here -->
-            <video class="video" autoplay loop muted playsinline>
-                <source src="assets/rocketvideo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+
+    <!-- Rocket Booster -->
+    <div class="card">
+        <h2 class="card-title">Rocket Booster</h2>
+        <div class="card-content">
+            <div >
+                <video class="video" autoplay loop muted playsinline>
+                    <source src="assets/rocketvideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="card-text">
+                <p>I made this little helicopter-type game called "Rocket Booster" in Unity, using the Unity Game Engine with C# scripting. </p>
+                <p>The player can steer the rocket using keyboard inputs.</p>
+                <p>Finally, I used to level manager so the player could progress to other levels.</p>
+            </div>
         </div>
-        <div class="right-subcontainer">
-            <!-- You can insert an image, video, or text here -->
-            <p>I made this little helicopter-type game called "Rocket Booster" in Unity, using the Unity Game Engine with C# scripting. </p>
-            <p>The player can steer the rocket using keyboard inputs.</p>
-            <p>Finally, I used to level manager so the player could progress to other levels.</p>
-        </div>
-    </div>
+      </div>
 
     <div class="small-container-spacer"></div>
 
-    <div class="main-container" style="--container-width: 1000px">
-        <h2 class="container-title">Rocket Booster Project</h2>
-        <div class="left-subcontainer">
-            <!-- You can insert an image, video, or text here -->
-            <video class="video" autoplay loop muted playsinline>
-                <source src="assets/rocketvideo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="right-subcontainer">
-            <!-- You can insert an image, video, or text here -->
-            <p>I made this little helicopter-type game called "Rocket Booster" in Unity, using the Unity Game Engine with C# scripting. </p>
-            <p>The player can steer the rocket using keyboard inputs.</p>
-            <p>Finally, I used to level manager so the player could progress to other levels.</p>
-        </div>
-    </div>
 
-    <div class="small-container-spacer"></div>
-
-    <div class="main-container" style="--container-width: 1000px">
-        <h2 class="container-title">Rocket Booster Project</h2>
-        <div class="left-subcontainer">
-            <!-- You can insert an image, video, or text here -->
-            <video class="video" autoplay loop muted playsinline>
-                <source src="assets/rocketvideo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="right-subcontainer">
-            <!-- You can insert an image, video, or text here -->
-            <p>I made this little helicopter-type game called "Rocket Booster" in Unity, using the Unity Game Engine with C# scripting. </p>
-            <p>The player can steer the rocket using keyboard inputs.</p>
-            <p>Finally, I used to level manager so the player could progress to other levels.</p>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 

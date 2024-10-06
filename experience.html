@@ -6,21 +6,16 @@
     <title>Experience</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navigation.css">
-    <link rel="stylesheet" href="containers.css">
+    <link rel="stylesheet" href="cards.css">
     <style>
         :root {
-            --container-width: 500px;
-        }
-
-        .main-container {
-            width: var(--container-width);
-            /* Add other styles here */
+            --card-width: 500px;
+            --image-width: 200px;
+            --text-width: 0px;
         }
     </style>
 </head>
 <body>
-
-
     <!-- Navigation Bar -->
     <nav class="navbar">
         <ul>
@@ -34,30 +29,32 @@
 
     <div class="large-container-spacer"></div>
 
-
-
-    <!-- WORK -->
-    <div class="main-container">
-        <h2 class="container-title">Work Experience</h2>
-        <div>
-            <p>💼&nbsp;&nbsp; SYSTRA &nbsp;&nbsp;&nbsp; [Consultant Engineer]: 2021 - 2024 </p>
-            <p>💼&nbsp;&nbsp; RAMBØLL &nbsp;[Consultant Engineer]: 2019 - 2021 </p>
-        </div> 
+    <!-- Single card: Work -->
+    <div class="card">
+        <h2 class="card-title">Work Experience</h2>
+        <div class="card-content">
+            <div >
+                <p>💼&nbsp;&nbsp; SYSTRA &nbsp;&nbsp;&nbsp; [Consultant Engineer]: 2021 - 2024 </p>
+                <p>💼&nbsp;&nbsp; RAMBØLL &nbsp;[Consultant Engineer]: 2019 - 2021 </p>
+            </div>
+        </div>
     </div>
 
     <div class="small-container-spacer"></div>
 
-    <!-- EDUCATION -->
-    <div class="main-container">
-        <h2 class="container-title">Education</h2>
-        <div>
-            <p>🎓&nbsp;&nbsp; M.Sc. in Structural Mechanics (DTU, Lyngby): 2016 - 2019 </p>
-            <p>🎓&nbsp;&nbsp; B.Sc. in Structural Mechanics (DTU, Lyngby): 2013 - 2016  </p>
-            <p>🎓&nbsp;&nbsp; HHX (Lyngby): 2008-2011</p>
-        </div> 
+    <!-- Single card: Education -->
+    <div class="card">
+        <h2 class="card-title">Education</h2>
+        <div class="card-content">
+            <div >
+                <p>🎓&nbsp;&nbsp; M.Sc. in Structural Mechanics (DTU, Lyngby): 2016 - 2019 </p>
+                <p>🎓&nbsp;&nbsp; B.Sc. in Structural Mechanics (DTU, Lyngby): 2013 - 2016  </p>
+                <p>🎓&nbsp;&nbsp; HHX (Lyngby): 2008-2011</p>
+            </div>
+        </div>
     </div>
 
-
+    <div class="small-container-spacer"></div>
 
 </body>
 </html>

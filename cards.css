@@ -1,0 +1,106 @@
+:root {
+  --text-width: 100px;
+  --image-width: 300px; 
+  --card-width: 500px;
+  --stacked-card-width: 320px;
+}
+
+/* General styles for the card */
+.card {
+  width: var(--card-width);
+  margin: 0px auto;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-title {
+  text-align: center;
+  background-color: #b0b0b078;
+  padding: 10px;
+  font-size: 24px;
+  margin: 0;
+}
+
+.card-content {
+  background-color: #b0b0b03c;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 30px;
+}
+
+.card-image {
+  margin: 0;
+  padding: 0;
+  width: var(--image-width);
+  border-radius: 20px; /* Rounded corners */
+}
+
+.card-text {
+  margin: 0;
+  padding: 0;
+  width: var(--text-width);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text p {
+  margin: 1px 0;
+  flex-grow: 1;
+  word-break: break-word; /* Helps to avoid overflow */
+}
+
+.large-container-spacer {
+  padding: 20px;
+}
+
+.small-container-spacer {
+  padding: 10px;
+}
+
+.video {
+  max-width: 100%; /* Limit video to 100% of the container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below the video */
+}
+
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+
+  .card {
+    width: var(--stacked-card-width);
+  }
+
+  .card-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card-image {
+      margin-bottom: 10px;
+      width: calc(var(--stacked-card-width) - 30px);
+  }
+
+  .card-text {
+    width: 100%; /* Take full width in stacked view */
+  }
+
+  .card-text p {
+    margin: 5px 0;
+    width: 100%;
+    height: auto; /* Let the text grow */
+    text-align: center;
+  }
+
+  .video {
+    max-width: 100%; /* Limit video to 100% of the container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the video */
+  }
+}

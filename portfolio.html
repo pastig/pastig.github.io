@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="cards.css">
     <style>
         :root {
-            --card-width: 800px;
-            --image-width: 200px;
-            --text-width: 500px;
+            --card-width: 1000px;
+            --image-width: 300px;
+            --text-width: 700px;
         }
     </style>
 </head>
@@ -51,6 +51,31 @@
     <div class="small-container-spacer"></div>
 
 
+    <!-- Kalaha -->
+    <div class="card">
+        <h2 class="card-title">Kalaha</h2>
+        <div class="card-content">
+            <div >
+                <video class="video" autoplay loop muted playsinline>
+                    <source src="assets/kalahavideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="card-text">
+                <p>I recreated good old Kalaha game in Python.</p>
+                <p>The game can be played by two players, or simulated by two computer players.</p>
+                <p>Here, I'm showing the results of simulating a thousand Kalaha games.</p>
+                <br>
+                <p>
+                    By these simulations I found that Player 1 (the starting player) has a significant advantage, why I finally found 
+                    that putting just one more stone in Player 2's 4th pocket minimized the advantage to ~ 1 %.
+                    I'm printing all board states to screen in this simulation, but could turn that printing off to optimize the speed of the simulation.
+                </p>
+            </div>
+        </div>
+      </div>
+      <!-- . -->
+      <div class="small-container-spacer"></div>
 
     <script src="script.js"></script>
 

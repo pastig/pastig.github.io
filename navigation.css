@@ -18,6 +18,15 @@
     flex-wrap: wrap;
 }
 
+.navbar ul li a.active {
+    background-color: #82828256 !important;
+    color: white !important;
+    border-radius: 5px;
+    padding: 10px 20px;
+    
+}
+
+
 .navbar li {
     display: inline;
     transition: opacity 0.7s ease, transform 0.7s ease;
@@ -54,7 +63,9 @@
 }
 
 .navbar a.active {
+    width: var(--navbar-btn-width);
     border: 2px solid white;
+    padding: 10px 20px;
     border-radius: 10px;
 }
 

@@ -39,7 +39,7 @@ html {
 }
 
 /* Staggered fade-in with shadow */
-@keyframes fadeInWithShadow {
+/* @keyframes fadeInWithShadow {
     from {
       opacity: 0;
       transform: translateY(20px);
@@ -48,27 +48,22 @@ html {
     to {
       opacity: 1;
       transform: translateY(0);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
-  }
+  } */
   
   /* Initially hide navbar items */
-  .navbar ul li {
+  /* .navbar ul li {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s, transform 0.5s, box-shadow 0.5s;
-  }
+  } */
   
   /* Initially hide content */
-  .card {
+  /* .card {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s, transform 0.5s, box-shadow 0.5s;
-  }
+  } */
   
-  .navbar ul li a.active {
-    background-color: #82828256 !important;
-    color: white !important;
-    border-radius: 5px;
-    padding: 5px 10px;
-}
+

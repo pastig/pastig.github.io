@@ -1,33 +1,17 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Navbar items fade with shadow
-    const navbarItems = document.querySelectorAll('.navbar ul li');
-    navbarItems.forEach((item, index) => {
-        setTimeout(() => {
-            item.style.opacity = '1';
-            item.style.transform = 'translateY(0)';
-            item.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.2)'; // Drop shadow effect
-        }, 120 * index); // Staggered effect
-    });
+document.addEventListener("DOMContentLoaded", function () {
+    // Get all links in the navbar
+    const navLinks = document.querySelectorAll('.navbar a');
 
-    // Content fade in with shadow
-    const contentContainers = document.querySelectorAll('.card');
-    setTimeout(() => {
-        contentContainers.forEach((container, index) => {
-            setTimeout(() => {
-                container.style.opacity = '1';
-                container.style.transform = 'translateY(0)';
-                container.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.2)';
-            }, 200 * index);
-        });
-    }, 120 * navbarItems.length);
-});
+    // Get the current URL's path, excluding query parameters or fragments
+    const currentPath = window.location.pathname.split("/").pop();
 
-document.addEventListener('DOMContentLoaded', function () {
-    const currentPage = window.location.pathname.split("/").pop();
-    const navLinks = document.querySelectorAll('.navbar ul li a');
+    // Default to 'index.html' if path is empty (e.g., home page)
+    const normalizedPath = currentPath === "" ? "index.html" : currentPath;
 
+    // Loop through the links and add the active class to the one matching the current path
     navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPage || (currentPage === '' && link.getAttribute('href') === 'index.html')) {
+        // Compare the href of the link with the normalized path
+        if (link.getAttribute('href').includes(normalizedPath)) {
             link.classList.add('active');
         }
     });

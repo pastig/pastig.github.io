@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navigation.css">
     <link rel="stylesheet" href="containers.css">
+    <style>
+        :root {
+            --container-width: 500px;
+        }
+
+        .main-container {
+            width: var(--container-width);
+            /* Add other styles here */
+        }
+    </style>
 </head>
 <body>
 
@@ -22,44 +32,32 @@
         </ul>
     </nav>
 
-    <div class="container-spacer"></div>
+    <div class="large-container-spacer"></div>
 
 
-        <!-- Work Experience -->
-        <div class="main-container-wrapper" style="--main-container-width: 500px; --file-width: 200px; --file-height: 300px; --text-width: 500px;">
-            <h2 class="container-heading">Work Experience</h2>
-            <div class="main-container">
-    
-                <!-- Second container, can be text or media -->
-                <div class="text-container">
-                    <p>💼&nbsp;&nbsp; SYSTRA &nbsp;&nbsp;&nbsp; [Consultant Engineer]: 2021 - 2024 </p>
-                    <br>
-                    <p>💼&nbsp;&nbsp; RAMBØLL &nbsp;[Consultant Engineer]: 2019 - 2021 </p>
-                </div>
-            </div>
-        </div>
-        <div class="container-spacer"></div>
-        <!-- Work Experience container end -->
 
-    <!-- Education -->
-    <div class="main-container-wrapper" style="--main-container-width: 500px; --file-width: 200px; --file-height: 300px; --text-width: 500px;">
-        <h2 class="container-heading">Education</h2>
-        <div class="main-container">
-
-            <!-- Second container, can be text or media -->
-            <div class="text-container">
-                <p>🎓&nbsp;&nbsp; M.Sc. in Structural Mechanics (DTU, Lyngby): 2016 - 2019 </p>
-                <br>
-                <p>🎓&nbsp;&nbsp; B.Sc. in Structural Mechanics (DTU, Lyngby): 2013 - 2016 </p>
-                <br>
-                <p>🎓&nbsp;&nbsp; HHX (Lyngby): 2008-2011</p>
-            </div>
-        </div>
+    <!-- WORK -->
+    <div class="main-container">
+        <h2 class="container-title">Work Experience</h2>
+        <div>
+            <p>💼&nbsp;&nbsp; SYSTRA &nbsp;&nbsp;&nbsp; [Consultant Engineer]: 2021 - 2024 </p>
+            <p>💼&nbsp;&nbsp; RAMBØLL &nbsp;[Consultant Engineer]: 2019 - 2021 </p>
+        </div> 
     </div>
-    <div class="container-spacer"></div>
-    <!-- Education container end -->
 
-    <script src="script.js"></script>
+    <div class="small-container-spacer"></div>
+
+    <!-- EDUCATION -->
+    <div class="main-container">
+        <h2 class="container-title">Education</h2>
+        <div>
+            <p>🎓&nbsp;&nbsp; M.Sc. in Structural Mechanics (DTU, Lyngby): 2016 - 2019 </p>
+            <p>🎓&nbsp;&nbsp; B.Sc. in Structural Mechanics (DTU, Lyngby): 2013 - 2016  </p>
+            <p>🎓&nbsp;&nbsp; HHX (Lyngby): 2008-2011</p>
+        </div> 
+    </div>
+
+
 
 </body>
 </html>

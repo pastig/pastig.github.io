@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navigation.css">
     <link rel="stylesheet" href="containers.css">
+    <style>
+        :root {
+            --container-width: 650px;
+        }
+
+        .main-container {
+            width: var(--container-width);
+            /* Add other styles here */
+        }
+    </style>
 </head>
 <body>
 
@@ -22,29 +32,27 @@
         </ul>
     </nav>
 
-        <div class="container-spacer"></div>
+        <div class="large-container-spacer"></div>
 
-        <!-- Generic container start -->
-        <div class="main-container-wrapper" style="--main-container-width: 500px; --file-width: 200px; --file-height: 300px; --text-width: 300px;">
-            <h2 class="container-heading">Welcome to my site!</h2>
-            <div class="main-container">
-                <!-- First container, can be text or media -->
+        <div class="main-container">
+            <h2 class="container-title">Welcome to my site!</h2>
+            
+            <div class="left-subcontainer">
                 <div class="file-container">
-                    <img class="my-file" src="images/linkedin.jpeg" alt="About Me Image">
+                    <img class="my-image" src="images/linkedin.jpeg" alt="About Me Image">
                 </div>
-        
-                <!-- Second container, can be text or media -->
-                <div class="text-container">
-                    <p>Check out more about me, my work experience, and my project portfolio.</p>
+            </div>
+    
+            <div class="right-subcontainer">
+                <p>Check out more about me, my work experience, and my project portfolio.</p>
                     <br>
                     <p>You can <a href="assets/Anders_Stig_Pedersen_CV.pdf" download="Anders_Stig_Pedersen_CV.pdf" class="link">
                         download my CV</a> as a single PDF file using the link here or by clicking "📄 Download CV" above.
                     </p>
-                </div>
             </div>
         </div>
-        <div class="container-spacer"></div>
-        <!-- Generic container end -->
+
+
 
     <script src="script.js"></script>
 

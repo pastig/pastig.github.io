@@ -1,4 +1,90 @@
 :root {
+    --container-width: 1000px;
+}
+
+/* Main container with rounded corners */
+.main-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows subcontainers to wrap on smaller screens */
+    justify-content: space-between; /* Keep space between subcontainers */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: var(--container-width); /* Limit max width */
+    border-radius: 20px; /* Rounded corners */
+    border: 2px solid #ccc;
+    background-color: #b0b0b03c;
+}
+
+/* Container title styling */
+.container-title {
+    flex-basis: 100%; 
+    margin-top: 0;
+    margin-bottom: 15px; 
+    font-size: 1.5rem; 
+    font-weight: bold;
+    text-align: center; 
+    padding-left: 10px; 
+}
+
+.left-subcontainer, .right-subcontainer {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* Flex-basis allows initial width */
+.left-subcontainer {
+    flex-basis: 48%; /* Takes up 48% of available width */
+    height: auto; /* Allow height to be dynamic */
+}
+
+/* Right subcontainer should behave similarly to the left */
+.right-subcontainer {
+    flex-basis: 48%;
+    height: auto;
+}
+
+.my-image {
+    max-width: 100%; /* Limit video to 100% of the container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the video */
+    border-radius: 10%;
+}
+
+/* Ensure the video fits the sub-container and keeps its aspect ratio */
+.video {
+    max-width: 100%; /* Limit video to 100% of the container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the video */
+}
+
+/* Mobile view: stack the containers vertically when screen width is small */
+@media (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+        max-width: 100%; /* Full width on mobile */
+    }
+
+    .container-title {
+        /* padding-left: 0; */
+        text-align: center;
+    }
+
+    .left-subcontainer, .right-subcontainer {
+        flex-basis: 100%; /* Full width for mobile */
+        margin-bottom: 0px; /* Add some space between stacked subcontainers */
+    }
+}
+
+.large-container-spacer {
+    padding: 20px;
+}
+
+.small-container-spacer {
+    padding: 10px;
+}
+
+
+/* :root {
     --main-container-width: 500px;
     --file-width: 200px;
     --file-height: 200px;
@@ -46,11 +132,11 @@
 
 .text-container {
     flex: 1;
-    text-align: left; /* Ensures text alignment is to the left */
+    text-align: left; 
     display: flex; 
     flex-direction: column; 
-    justify-content: center; /* Aligns content to the top of the container */
-    align-items: flex-start; /* Aligns all items to the left */
+    justify-content: center; 
+    align-items: flex-start; 
     max-width: var(--text-width); 
     max-height: var(--file-height); 
     box-sizing: border-box;
@@ -60,11 +146,11 @@
 }
 
 .text-container p {
-    /* display: flex;z */
+
     margin: 0; 
     padding: 0;
     line-height: 1.5; 
-    /* text-align: left; */
+ 
 }
 
 
@@ -87,11 +173,12 @@
     width: var(--file-width); 
     height: var(--file-height);
     max-height: 200px;
-    border-radius: 10%; /* Optional for circular images */
+    border-radius: 10%;
 }
 
 .video {
     width: 100%;
     max-height: var(--file-height);
 
-}
+} */
+

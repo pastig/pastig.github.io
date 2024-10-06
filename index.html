@@ -9,14 +9,13 @@
     <link rel="stylesheet" href="cards.css">
     <style>
         :root {
-            --card-width: 520px;
-            --image-width: 230px;
-            --text-width: 200px;
+            --card-width: 700px;
+            --image-width: 300px;
+            --text-width: 300px;
         }
     </style>
 </head>
 <body>
-
 
     <!-- Navigation Bar -->
     <nav class="navbar">
@@ -31,24 +30,41 @@
 
         <div class="large-container-spacer"></div>
 
-        <div class="main-container">
-            <h2 class="container-title">Welcome to my site!</h2>
-            
-            <div class="left-subcontainer">
-                <div class="file-container">
-                    <img class="my-image" src="images/linkedin.jpeg" alt="About Me Image">
+        <!-- Contant info -->
+        <div class="card">
+            <h2 class="card-title">Welcome to my page!</h2>
+            <div class="card-content">
+                <div >
+                    <img class="card-image"src="images/linkedin.jpeg" alt="Contact Image">
                 </div>
-            </div>
-    
-            <div class="right-subcontainer">
-                <p>Check out more about me, my work experience, and my project portfolio.</p>
-                    <br>
+                <div class="card-text">
+                    <p><strong>About the page:</strong></p>
+                    <p> <em>Check out more about me, my work experience, and my project portfolio.</p>
                     <p>You can <a href="assets/Anders_Stig_Pedersen_CV.pdf" download="Anders_Stig_Pedersen_CV.pdf" class="link">
-                        download my CV</a> as a single PDF file using the link here or by clicking "📄 Download CV" above.
+                       download my CV</a> as a single PDF file using the link here or by clicking "📄 Download CV" above.
+                    </em></p>
+                    <br>
+                    <p><strong>Contact information:</strong></p>
+                    <p><span style="font-size: 24px; vertical-align: middle;">🤖</span>&nbsp; Anders Stig Pedersen</p>
+                    <p><span style="font-size: 24px; vertical-align: middle;">☎️</span>&nbsp; +45 31541037</p>
+                    <p>
+                        <a class="link" href="https://www.linkedin.com/in/anders-pedersen-a3b7396b/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                            <img src="images/linkedinLogo.png" alt="LinkedIn Logo" class="linkedin-logo" style="vertical-align: middle;">
+                            &nbsp; <span style="text-decoration: underline;">Anders Stig Pedersen</span>
+                        </a>
                     </p>
+                    <p class="link">
+                        <span style="font-size: 24px; vertical-align: middle;">✉️</span>
+                        <a class="link" href="mailto:andersstigp@gmail.com" style="text-decoration: none;">
+                            &nbsp; <span style="text-decoration: underline;">andersstigp@gmail.com</span>
+                        </a>
+                    </p>
+
+                </div>
             </div>
         </div>
 
+    <div class="small-container-spacer"></div>
 
 
     <script src="script.js"></script>

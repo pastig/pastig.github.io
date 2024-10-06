@@ -38,5 +38,37 @@ html {
     text-decoration: underline; /* Optional underline on hover */
 }
 
-
-
+/* Staggered fade-in with shadow */
+@keyframes fadeInWithShadow {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+      box-shadow: none;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    }
+  }
+  
+  /* Initially hide navbar items */
+  .navbar ul li {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s, box-shadow 0.5s;
+  }
+  
+  /* Initially hide content */
+  .card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s, box-shadow 0.5s;
+  }
+  
+  .navbar ul li a.active {
+    background-color: #82828256 !important;
+    color: white !important;
+    border-radius: 5px;
+    padding: 5px 10px;
+}

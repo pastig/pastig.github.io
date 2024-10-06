@@ -92,7 +92,7 @@
 }
 
 .video {
-    max-width: var(--file-width);
+    width: 100%;
     max-height: var(--file-height);
 
 }

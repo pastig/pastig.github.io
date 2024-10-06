@@ -37,3 +37,27 @@ html {
 .download-cv-link:hover {
     text-decoration: underline; /* Optional underline on hover */
 }
+
+
+.wavy-text span {
+  display: inline-block;
+  opacity: 0; /* Initially hidden */
+  transform: scale(0); /* Initially small */
+  animation: waveGrow 0.5s ease forwards; /* Single time wave effect */
+  animation-delay: calc(0.1s * var(--i)); /* Control delay for each letter */
+}
+
+@keyframes waveGrow {
+  0% {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  50% {
+      opacity: 1;
+      transform: scale(1.5);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}

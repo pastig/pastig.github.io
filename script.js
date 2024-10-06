@@ -16,3 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const letters = document.querySelectorAll('.wavy-text span');
+    letters.forEach((letter, index) => {
+        letter.style.setProperty('--i', index);
+    });
+});

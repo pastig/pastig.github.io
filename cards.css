@@ -34,6 +34,18 @@
   gap: 30px;
 }
 
+.card-content-graph {
+  background-color: #b0b0b03c;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 400px; */
+  padding: 20px;
+  gap: 10px;
+}
+
 .card-image {
   margin: 0;
   padding: 0;
@@ -102,5 +114,16 @@
     max-width: 100%; /* Limit video to 100% of the container width */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove extra space below the video */
+  }
+
+  .card-content-graph {
+    background-color: #b0b0b03c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 0px;
   }
 }

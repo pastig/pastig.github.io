@@ -1,0 +1,69 @@
+.chart-container {
+  display: flex;
+  justify-content: center;
+  /* Brings bars closer together */
+  align-items: flex-end;
+  height: 250px;
+  padding: 40px;
+  perspective: 1000px;
+  gap: 10px;
+  /* Optional: Adds uniform spacing between bars */
+}
+
+.bar {
+  width: 52px;
+  /* Reduce width of bars to bring them closer */
+  background: linear-gradient(45deg, #4e54c8, #8f94fb);
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bar:hover {
+  transform: scale(1.1);
+  /* Slight scale effect on hover */
+}
+
+.bar .percentage {
+  position: absolute;
+  top: -30px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.bar .label {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Set the height using specific classes */
+.excel-bar {
+  height: calc(90%);
+}
+
+.python-bar {
+  height: calc(65%);
+}
+
+.django-bar {
+  height: calc(55%);
+}
+
+.csharp-bar {
+  height: calc(45%);
+}
+
+.swiftui-bar {
+  height: calc(30%);
+}

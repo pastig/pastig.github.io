@@ -1,5 +1,5 @@
 :root {
-    --navbar-btn-width: 110px;    
+    --navbar-btn-width: 110px;
 }
 
 .navbar {
@@ -23,7 +23,7 @@
     color: white !important;
     border-radius: 15px;
     padding: 10px 20px;
-    
+
 }
 
 /* .navbar a.active {
@@ -58,9 +58,9 @@
 }
 
 .nav-container.show {
-    opacity: 1; 
+    opacity: 1;
     transform: translateX(0);
-} 
+}
 
 
 .navbar a:hover {
@@ -81,10 +81,10 @@
 
 @media (max-width: 600px) {
     .navbar ul {
-        justify-content: center; 
+        justify-content: center;
     }
 
     .navbar a {
-        width: 100%; 
+        width: 100%;
     }
 }
